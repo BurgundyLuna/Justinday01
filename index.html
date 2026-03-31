@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin A. Balanquit | 21st Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">JB</span>
+        <div>
+          <p>Justin A. Balanquit</p>
+          <small>Celebrating 21 years</small>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#memories">Memories</a>
+        <a href="#wishes">Wishes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">21st Birthday Celebration</p>
+          <h1>Happy 21st, Justin!</h1>
+          <p>Here’s a bright and joyful website to celebrate one of your best years yet. Share memories, send wishes, and keep the party going.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#wishes">Send a Wish</a>
+            <a class="button button-secondary" href="#memories">View Memories</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <img class="hero-photo" src="justin-photo.jpg" alt="Justin A. Balanquit" />
+          </div>
+          <div class="details-card">
+            <h2>Justin's 21st</h2>
+            <p>From friends, family, and everyone who loves celebrating you.</p>
+            <ul>
+              <li>Dream big</li>
+              <li>Laugh loud</li>
+              <li>Enjoy every moment</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-panel about-panel">
+        <div class="section-heading">
+          <p class="eyebrow">About Justin</p>
+          <h2>21 years of bright energy</h2>
+        </div>
+        <div class="content-grid">
+          <article>
+            <h3>Who he is</h3>
+            <p>Justin is a bold, thoughtful, and creative person who makes every room brighter. Known for his warm laugh, kindness, and relentless curiosity, he is celebrating a milestone year with friends and family.</p>
+          </article>
+          <article>
+            <h3>Favorite things</h3>
+            <ul>
+              <li>Good food and strong coffee</li>
+              <li>Music that keeps the party moving</li>
+              <li>Adventures with the people who matter most</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="memories" class="section-panel memories-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Memories</p>
+          <h2>Moments worth celebrating</h2>
+        </div>
+        <div class="memory-grid">
+          <article class="memory-card">
+            <h3>First big milestone</h3>
+            <p>Justin’s journey at 21 is built on passion, growth, and the courage to take on new challenges every day.</p>
+          </article>
+          <article class="memory-card">
+            <h3>Friends and family</h3>
+            <p>From late-night talks to unforgettable gatherings, the best stories are the ones shared with loved ones.</p>
+          </article>
+          <article class="memory-card">
+            <h3>Future bright</h3>
+            <p>Every birthday is a reminder to keep dreaming big, stay grateful, and love the path ahead.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="wishes" class="section-panel wishes-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Well Wishes</p>
+          <h2>Share a message for Justin</h2>
+        </div>
+        <div class="wishes-layout">
+          <form id="wishForm" class="wish-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Ana" required />
+
+            <label for="message">Birthday message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your wish here…" required></textarea>
+
+            <button class="button button-primary" type="submit">Send the wish</button>
+          </form>
+          <div class="wishes-feed" id="wishesFeed">
+            <div class="wish-card empty-state">
+              <p>Write a wish for Justin and it will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Happy 21st birthday, Justin A. Balanquit. May this year be your best one yet.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

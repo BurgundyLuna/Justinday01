@@ -1,0 +1,357 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #020722;
+  color: #eef2ff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(199, 207, 222, 0.16), transparent 25%),
+    linear-gradient(180deg, #020722 0%, #08153e 100%);
+}
+
+.page-shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 24px 20px 32px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  background: rgba(11, 16, 34, 0.72);
+  backdrop-filter: blur(14px);
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #8fa4e6, #c7d0f4);
+  color: #0b1f49;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brand p {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand small {
+  color: #ced6ee;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: #dce0ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.hero-copy .eyebrow,
+.section-heading .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  color: #b9c7e6;
+  margin-bottom: 14px;
+}
+
+.hero-copy h1,
+.section-heading h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  margin: 0 0 18px;
+  line-height: 0.98;
+}
+
+.hero-copy p {
+  max-width: 620px;
+  color: #e8ecfc;
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #aab8ef, #d6e0ff);
+  color: #07143a;
+}
+
+.button-secondary {
+  background: rgba(222, 228, 243, 0.08);
+  color: #eef2ff;
+  border-color: rgba(214, 224, 244, 0.32);
+}
+
+.hero-visual {
+  display: grid;
+  gap: 24px;
+}
+
+.photo-frame {
+  width: 100%;
+  min-height: 320px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(25, 40, 72, 0.95), rgba(8, 14, 32, 0.96));
+  border: 1px solid rgba(238, 242, 255, 0.14);
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+  display: grid;
+  place-items: center;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details-card {
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(10, 18, 48, 0.92);
+  border: 1px solid rgba(203, 214, 236, 0.18);
+  box-shadow: 0 16px 48px rgba(2, 9, 32, 0.38);
+}
+
+.details-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+
+.details-card p {
+  color: #d7dfea;
+}
+
+.details-card ul {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.details-card li {
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-panel {
+  padding: 50px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-heading {
+  max-width: 680px;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 3vw, 2.9rem);
+}
+
+.content-grid,
+.memory-grid,
+.wishes-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.content-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.content-grid article,
+.memory-card,
+.wish-card,
+.wish-form,
+.wishes-feed {
+  border-radius: 28px;
+  background: rgba(10, 18, 45, 0.94);
+  border: 1px solid rgba(204, 217, 238, 0.14);
+  padding: 28px;
+}
+
+.memory-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.memory-card h3,
+.content-grid h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.memory-card p,
+.content-grid p,
+.content-grid ul {
+  color: #d8ddff;
+}
+
+.content-grid ul {
+  padding-left: 20px;
+}
+
+.wishes-layout {
+  grid-template-columns: 1.05fr 1fr;
+  align-items: start;
+}
+
+.wish-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #a8b2ff;
+  font-weight: 600;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 100%;
+  border: 1px solid rgba(199, 210, 230, 0.22);
+  border-radius: 18px;
+  background: rgba(18, 28, 62, 0.96);
+  color: #eef4ff;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  font: inherit;
+}
+
+.wish-form textarea {
+  resize: vertical;
+}
+
+.wish-form button {
+  width: 100%;
+}
+
+.wishes-feed {
+  min-height: 340px;
+  display: grid;
+  gap: 18px;
+}
+
+.wish-card {
+  padding: 22px;
+  background: rgba(12, 18, 44, 0.96);
+  border: 1px solid rgba(210, 222, 241, 0.14);
+}
+
+.wish-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.wish-card p {
+  margin: 0;
+  color: #dadff8;
+}
+
+.empty-state {
+  display: grid;
+  place-items: center;
+  color: #c8d1ed;
+  text-align: center;
+  min-height: 240px;
+}
+
+.site-footer {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(204, 215, 235, 0.18);
+  text-align: center;
+  color: #c5cee8;
+}
+
+@media (max-width: 960px) {
+  .hero-section,
+  .wishes-layout,
+  .content-grid,
+  .memory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 18px 16px 24px;
+  }
+
+  .hero-copy h1,
+  .section-heading h2 {
+    font-size: 2.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
